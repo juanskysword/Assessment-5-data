@@ -275,7 +275,8 @@ module.exports = {
     sequelize
       .query(
         `
-         DELETE FROM cities;
+         DELETE FROM cities
+         WHERE ;
          `
       )
       .then((dbRes) => res.status(200).send(dbRes[0]))
